@@ -5,6 +5,42 @@
     font-family: $sans-serif;
 }
 
+/* LOGIN */
+.btn-login {
+    background: $azul;
+    color: white;
+    margin-top: 20px;
+
+    &:hover {
+        background: $color-hover-btn;
+    }
+}
+
+
+.sidebar-login {
+    color: $azul;
+}
+
+.title-body {
+    font-weight: 700;
+}
+
+.text-restablecer {
+    color: gray;
+    font-size: .9rem;
+    margin-top: 10px;
+    display: block;
+}
+
+.title-offcanvas {
+    text-transform: uppercase;
+
+    h5 {
+        margin-bottom: 0;
+    }
+
+}
+
 @import './utilidades/header';
 @import './utilidades/footer';
 @import './secciones/index';

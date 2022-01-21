@@ -1,6 +1,32 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Roboto:wght@100;300;400;500;700&family=Source+Sans+Pro:wght@300;400;700&display=swap");
 * {
   font-family: "Source Sans Pro", sans-serif; }
+
+/* LOGIN */
+.btn-login {
+  background: #0077C0;
+  color: white;
+  margin-top: 20px; }
+  .btn-login:hover {
+    background: #C7EEFF; }
+
+.sidebar-login {
+  color: #0077C0; }
+
+.title-body {
+  font-weight: 700; }
+
+.text-restablecer {
+  color: gray;
+  font-size: .9rem;
+  margin-top: 10px;
+  display: block; }
+
+.title-offcanvas {
+  text-transform: uppercase; }
+  .title-offcanvas h5 {
+    margin-bottom: 0; }
 
 .navbar-dark {
   text-transform: uppercase;
@@ -53,10 +79,152 @@
   position: absolute;
   top: 45%;
   color: white;
-  background-color: #0000001a; }
+  background-color: #0000001a;
+  /* ANIMACION BREATH */ }
   .titulo-video .titulo-bold {
     font-weight: 700;
     font-size: 48px; }
   .titulo-video .titulo-light {
     font-size: 26px;
     animation: flash 5s; }
+
+@keyframes flash {
+  0%,
+  50%,
+  100% {
+    opacity: 1; }
+  25%,
+  75% {
+    opacity: 0; } }
+
+.titulo-productos {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 20px;
+  border-bottom: 3px solid #0077C0;
+  width: 70px; }
+
+.categoria-principal {
+  background-image: url(../img/prod-1.png);
+  background-size: cover;
+  background-blend-mode: soft-light;
+  background-color: #3f3f3e3d;
+  height: 200px; }
+
+.categoria-secundaria {
+  background-image: url(../img/prod-2.png);
+  background-size: cover;
+  background-blend-mode: soft-light;
+  background-color: #3f3f3e3d;
+  height: 200px;
+  margin: 10px 0; }
+
+.categoria-terciaria {
+  background-image: url(../img/prod-3.png);
+  background-size: cover;
+  background-blend-mode: soft-light;
+  background-color: #3f3f3e3d;
+  height: 200px; }
+
+.productos a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  font-weight: 700;
+  padding: 15px 20px; }
+
+.productos span {
+  border-bottom: 3px solid white; }
+
+.titulo-destacados {
+  font-size: 24px;
+  border-bottom: 3px solid #0077C0;
+  width: 70px;
+  font-weight: 700;
+  margin: 20px 0; }
+
+.btn-dest {
+  background: #0077C0;
+  font-size: 20px;
+  color: white;
+  width: 100%; }
+  .btn-dest:hover {
+    background: #C7EEFF; }
+
+.card-destacados {
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%; }
+  .card-destacados:nth-child(1) {
+    margin-top: 0; }
+  .card-destacados .precio {
+    font-weight: 700;
+    font-size: 24px; }
+  .card-destacados .img-dest {
+    height: 250px; }
+
+/* MEDIASQUERYS */
+@media (max-width: 479px) {
+  .titulo-bold {
+    font-size: 38px; }
+  .titulo-light {
+    font-size: 26px; } }
+
+@media (min-width: 768px) {
+  .categoria-principal {
+    height: 400px; }
+  .categoria-secundaria {
+    margin-top: 0; }
+  .categoria-terciaria,
+  .categoria-secundaria {
+    height: 195px;
+    width: 99%;
+    margin-left: 5px; }
+  .card-destacados {
+    width: 33%; }
+    .card-destacados:nth-child(1) {
+      margin-top: 20px; } }
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end; }
+  .titulo-video .titulo-bold {
+    font-size: 68px; }
+  .titulo-video .titulo-light {
+    font-size: 56px; }
+  /* ANIMACIÓN HEADER */
+  .nav-link {
+    position: relative; }
+    .nav-link:hover {
+      color: rgba(255, 255, 255, 0.55);
+      text-decoration: none; }
+    .nav-link::after {
+      content: "";
+      background-color: rgba(255, 255, 255, 0.55);
+      width: 100%;
+      height: 3px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform .5s; }
+    .nav-link:hover::after {
+      transform: scaleX(1);
+      transform-origin: left; }
+  /* ANIMACION PRODUCTOS */
+  .categoria-principal,
+  .categoria-secundaria,
+  .categoria-terciaria {
+    transition: .2s; }
+  .categoria-principal:hover {
+    transition: .2s;
+    background-image: url(../img/prod-1-transition.jpg); }
+  .categoria-secundaria:hover {
+    transition: .2s;
+    background-image: url(../img/prod-2-transition.jpg); }
+  .categoria-terciaria:hover {
+    transition: .2s;
+    background-image: url(../img/prod-3-transition.jpg); } }
