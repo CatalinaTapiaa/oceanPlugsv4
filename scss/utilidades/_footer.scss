@@ -1,0 +1,19 @@
+.footer {
+    background-image: url(../img/footer.png);
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: bottom;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    padding-top: var(--bs-gutter-x, .75rem);
+    padding-bottom: var(--bs-gutter-x, .75rem);
+    color: white;
+    .text-insta {
+        text-decoration: none;
+        color: white;
+        &:hover {
+            color: $color-hover-texto;
+        }
+    }
+}

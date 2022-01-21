@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Roboto:wght@100;300;400;500;700&family=Source+Sans+Pro:wght@300;400;700&display=swap");
+* {
+  font-family: "Source Sans Pro", sans-serif; }
+
+.navbar-dark {
+  text-transform: uppercase;
+  font-size: 18px; }
+  .navbar-dark .navbar-nav .nav-link {
+    color: white;
+    margin-left: 20px; }
+  .navbar-dark .nav-icon {
+    display: block;
+    color: white;
+    padding: 0.5rem 1rem; }
+    .navbar-dark .nav-icon:hover {
+      color: rgba(255, 255, 255, 0.55);
+      cursor: pointer; }
+  .navbar-dark .badge-carro {
+    font-size: 0.85rem;
+    font-weight: 700;
+    width: 20px;
+    height: 20px;
+    margin-left: 2px;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    background: #000000; }
+
+.footer {
+  background-image: url(../img/footer.png);
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: bottom;
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  padding-top: var(--bs-gutter-x, 0.75rem);
+  padding-bottom: var(--bs-gutter-x, 0.75rem);
+  color: white; }
+  .footer .text-insta {
+    text-decoration: none;
+    color: white; }
+    .footer .text-insta:hover {
+      color: rgba(255, 255, 255, 0.55); }
+
+.carousel-inner .img-carousel {
+  height: 100vh;
+  object-fit: cover; }
+
+.titulo-video {
+  position: absolute;
+  top: 45%;
+  color: white;
+  background-color: #0000001a; }
+  .titulo-video .titulo-bold {
+    font-weight: 700;
+    font-size: 48px; }
+  .titulo-video .titulo-light {
+    font-size: 26px;
+    animation: flash 5s; }

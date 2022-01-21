@@ -1,0 +1,25 @@
+//CAROUSEL
+
+.carousel-inner {
+    .img-carousel {
+        height: 100vh;
+        object-fit: cover;
+    }
+}
+
+.titulo-video {
+    position: absolute;
+    top: 45%;
+    color: white;
+    background-color: #0000001a;
+
+    .titulo-bold {
+        font-weight: 700;
+        font-size: 48px;
+    }
+
+    .titulo-light {
+        font-size: 26px;
+        animation: flash 5s;
+    }
+}
